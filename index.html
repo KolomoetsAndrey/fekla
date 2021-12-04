@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="images/logo.png" alt="..." class="logo-img">
+                    </a>
+                </div>
+                <div class="col-lg-7 menu">
+                    <ul class="menu-list">
+                        <li><a href="index.html" class="menu-link">Главная</a></li>
+                        <li><a href="about.html" class="menu-link">О нас</a></li>
+                        <li><a href="experts.html" class="menu-link">Эксперты</a></li>
+                        <li><a href="services.html" class="menu-link">Услуги</a></li>
+                        <li><a href="shop.html" class="menu-link">Магазин</a></li>
+                        <li><a href="news.html" class="menu-link">Новости</a></li>
+                        <li><a href="contact.html" class="menu-link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 store-nav">
+                    <a href="account.html" class="user-link">
+                        <img src="images/icon_user.png" alt="" class="user-icon">
+                        Личный кабинет
+                    </a>
+                    <a href="cart.html" class="cart-link">
+                        <img src="images/icon_cart.png" alt="..." class="cart-icon">
+                        <span class="items">7</span>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-12 left-block">
+                    <h2>
+                        Поможем определить истинную причину Ваших проблем и найти выход
+                    </h2>
+                    <p>
+                        Первая консультация бесплатно
+                    </p>
+                    <button class="consultation-btn">
+                        Получить консультацию
+                    </button>
+                    <ul class="header-social">
+                        <li>
+                            <a href="" class="header-social-link">
+                                <img src="images/icon_fb.png" alt="" class="header-social-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="header-social-link">
+                                <img src="images/icon_insta.png" alt="" class="header-social-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-12 right-block">
+                    <div class="play">
+                        <button class="play-btn">
+                            <img src="images/icon_play.png" alt="..." class="play-img">
+                            Наше <span>видео</span>
+                        </button>
+                    </div>
+                    <div class="timer">
+                        <div class="timer-icon">
+                            <img src="images/timer_btn.png" alt="..." class="timer-icon-img">
+                        </div>
+                        <div id="countdown" class="countdown">
+                            <div class="countdown-number">
+                                <span class="countdown-text">Дней</span>
+                                <span class="days countdown-time"></span>
+                            </div>
+                            <div class="countdown-number">
+                                <span class="countdown-text">Часов</span>
+                                <span class="hours countdown-time"></span>
+                            </div>
+                            <div class="countdown-number">
+                                <span class="countdown-text">Минут</span>
+                                <span class="minutes countdown-time"></span>
+                            </div>
+                            <div class="countdown-number">
+                                <span class="countdown-text">Секунд</span>
+                                <span class="seconds countdown-time"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="experts">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 title-nav">
+                    <h2>
+                        Наши
+                        <span>эксперты</span>
+                    </h2>
+                    <div class="expert-slider-nav">
+                        <a href="experts.html">Все эксперты</a>
+                        <div class="expert-slider-arrows">
+                            <i class="bi bi-arrow-left expert-slider-prev"></i>
+                            <i class="bi bi-arrow-right expert-slider-next"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row expert-slider">
+                <div class="col-lg-3 col-12 expert-block">
+                    <div class="image-block">
+                        <img src="images/ivanova.png" alt="" class="expert-img">
+                    </div>
+                    <div class="name-block">
+                        <h3>Элеонора Иванова</h3>
+                        <p>Таролог / Водолей / 112 отзывов</p>
+                    </div>
+                    <div class="description-block">
+                        <p>
+                            Опытный таролог, мастер трансовых техник, эксперт в области моделирования будущего. 
+                        </p>
+                        <button class="get-consultation">
+                            Получить консультацию
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 expert-block">
+                    <div class="image-block">
+                        <img src="images/sidorova.png" alt="" class="expert-img">
+                    </div>
+                    <div class="name-block">
+                        <h3>Марта Сидорова</h3>
+                        <p>Нумеролог / Козерог / 0 отзывов</p>
+                    </div>
+                    <div class="description-block">
+                        <p>
+                            Ведический нумеролог из Израиля. Выявляет сильные и слабые стороны человека, прогнозирует ход событий.
+                        </p>
+                        <button class="get-consultation">
+                            Получить консультацию
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 expert-block">
+                    <div class="image-block">
+                        <img src="images/margarita.png" alt="" class="expert-img">
+                    </div>
+                    <div class="name-block">
+                        <h3>Маргарита</h3>
+                        <p>Психолог, таролог и эзотерический физиолог / Рак / 12 отзывов</p>
+                    </div>
+                    <div class="description-block">
+                        <p>
+                            Опытный таролог, мастер трансовых техник, эксперт в области моделирования будущего.
+                        </p>
+                        <button class="get-consultation">
+                            Получить консультацию
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 expert-block">
+                    <div class="image-block">
+                        <img src="images/Albina.png" alt="" class="expert-img">
+                    </div>
+                    <div class="name-block">
+                        <h3>Альбина</h3>
+                        <p>Нумеролог, экстрасенс, биоэнергетик / Скорпион / 1002 отзыва</p>
+                    </div>
+                    <div class="description-block">
+                        <p>
+                            Работает со звёздами шоу-бизнеса, известными актёрами и политиками. Помогает преодолеть любые …
+                        </p>
+                        <button class="get-consultation">
+                            Получить консультацию
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 expert-block">
+                    <div class="image-block">
+                        <img src="images/ivanova.png" alt="" class="expert-img">
+                    </div>
+                    <div class="name-block">
+                        <h3>Элеонора Иванова</h3>
+                        <p>Таролог / Водолей / 112 отзывов</p>
+                    </div>
+                    <div class="description-block">
+                        <p>
+                            Опытный таролог, мастер трансовых техник, эксперт в области моделирования будущего. 
+                        </p>
+                        <button class="get-consultation">
+                            Получить консультацию
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 expert-block">
+                    <div class="image-block">
+                        <img src="images/sidorova.png" alt="" class="expert-img">
+                    </div>
+                    <div class="name-block">
+                        <h3>Марта Сидорова</h3>
+                        <p>Нумеролог / Козерог / 0 отзывов</p>
+                    </div>
+                    <div class="description-block">
+                        <p>
+                            Ведический нумеролог из Израиля. Выявляет сильные и слабые стороны человека, прогнозирует ход событий.
+                        </p>
+                        <button class="get-consultation">
+                            Получить консультацию
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 expert-block">
+                    <div class="image-block">
+                        <img src="images/margarita.png" alt="" class="expert-img">
+                    </div>
+                    <div class="name-block">
+                        <h3>Маргарита</h3>
+                        <p>Психолог, таролог и эзотерический физиолог / Рак / 12 отзывов</p>
+                    </div>
+                    <div class="description-block">
+                        <p>
+                            Опытный таролог, мастер трансовых техник, эксперт в области моделирования будущего.
+                        </p>
+                        <button class="get-consultation">
+                            Получить консультацию
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 expert-block">
+                    <div class="image-block">
+                        <img src="images/Albina.png" alt="" class="expert-img">
+                    </div>
+                    <div class="name-block">
+                        <h3>Альбина</h3>
+                        <p>Нумеролог, экстрасенс, биоэнергетик / Скорпион / 1002 отзыва</p>
+                    </div>
+                    <div class="description-block">
+                        <p>
+                            Работает со звёздами шоу-бизнеса, известными актёрами и политиками. Помогает преодолеть любые …
+                        </p>
+                        <button class="get-consultation">
+                            Получить консультацию
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>
+                        Наши
+                        <span>услуги</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row services-slider-block">
+                <div class="col-lg-6 col-12 services-text-slider">
+                    <div class="slider-block">
+                        <h3>
+                            Гадание на кофейной гуще
+                        </h3>
+                        <p>
+                            Данный способ предсказать свое будущее является наиболее известным и часто применяемым гаданием. Практически каждый если и не пробовал гадать таким способом, то, по крайней мере, слышал о нем... 
+                        </p>
+                        <a href="" class="get-more">Подробнее</a>
+                    </div>
+                    <div class="slider-block">
+                        <h3>
+                            Таро расклад «Вторая половинка»
+                        </h3>
+                        <p>
+                            Все мы мечтам найти свою вторую половинку, ту самую с которой хочется пройти вместе эту жизнь и все последующие. Но, часто бывает так, что мы не дожидаемся свою судьбу, выбираем не того в свои любовный партнеры и из-за этого мучаемся всю жизнь.
+                        </p>
+                        <a href="" class="get-more">Подробнее</a>
+                    </div>
+                    <div class="slider-block">
+                        <h3>
+                            Ритуал «Отчитка негативных цифр в дате рождения»
+                        </h3>
+                        <p>
+                            Определённые цифры в дате рождения могут быть показателем кармических уроков, тех испытаний которые судьба вам уготовила
+                        </p>
+                        <a href="" class="get-more">Подробнее</a>
+                    </div>
+                    <div class="slider-block">
+                        <h3>
+                            Ритуал «Молебен о снятии родового проклятия»
+                        </h3>
+                        <p>
+                            Молебен состоит из двух частей, одна из которых направлена на снятие родового проклятия, вторая позволяет заменить энергетическую пустоту родових каналов, которая образуется в случае утери информации о своих предках, в случае бездуховности и атеизма в поколених, на энергии изобилия и процветания.
+                        </p>
+                        <a href="" class="get-more">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-12 services-image-slider">
+                    <div class="slider-block">
+                        <img src="images/image_1.png" alt="" class="services-slider-img">
+                    </div>
+                    <div class="slider-block">
+                        <img src="images/image_2.png" alt="" class="services-slider-img">
+                    </div>
+                    <div class="slider-block">
+                        <img src="images/image_3.png" alt="" class="services-slider-img">
+                    </div>
+                    <div class="slider-block">
+                        <img src="images/image_4.png" alt="" class="services-slider-img">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 services-slider-nav">
+                    <a href="services.html">Все услуги</a>
+                    <div class="services-slider-arrows">
+                        <i class="bi bi-arrow-left services-slider-prev"></i>
+                        <i class="bi bi-arrow-right services-slider-next"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 title-nav">
+                    <h2>
+                        Наши
+                        <span>Товары</span>
+                    </h2>
+                    <div class="products-slider-nav">
+                        <a href="shop.html">Все товары</a>
+                        <div class="products-slider-arrows">
+                            <i class="bi bi-arrow-left products-slider-prev"></i>
+                            <i class="bi bi-arrow-right products-slider-next"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row products-slider">
+                <div class="col-lg-3 col-12 product-block">
+                    <div class="image-block">
+                        <img src="images/product_1.png" alt="..." class="image-block-img">
+                        <ul class="product-sticker">
+                            <li>
+                                <span class="new">new</span>
+                            </li>
+                            <li>
+                                <span class="sale">sale</span>
+                            </li>
+                            <li>
+                                <span class="top">top</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="title-block">
+                        <h3>
+                            Алтарный колокольчик
+                        </h3>
+                    </div>
+                    <div class="price-block">
+                        <p>385.00 грн</p>
+                    </div>
+                    <div class="cart-block">
+                        <a href="" class="get-more">Подробнее</a>
+                        <div class="buttons">
+                            <button class="heart">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                            <button class="buy">
+                                <img src="images/icon_cart.png" alt="" class="buy-img">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 product-block">
+                    <div class="image-block">
+                        <img src="images/product_2.png" alt="..." class="image-block-img">
+                        <ul class="product-sticker">
+                            <li>
+                                <span class="new">new</span>
+                            </li>
+                            <li>
+                                <span class="sale">sale</span>
+                            </li>
+                            <li>
+                                <span class="top">top</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="title-block">
+                        <h3>
+                            Таро 7 Звёзд (Poisoncage Tarot)
+                        </h3>
+                    </div>
+                    <div class="price-block">
+                        <p>385.00 грн <span class="old-price">450.00 грн</span></p>
+                    </div>
+                    <div class="cart-block">
+                        <a href="" class="get-more">Подробнее</a>
+                        <div class="buttons">
+                            <button class="heart">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                            <button class="buy">
+                                <img src="images/icon_cart.png" alt="" class="buy-img">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 product-block">
+                    <div class="image-block">
+                        <img src="images/product_3.png" alt="..." class="image-block-img">
+                        <ul class="product-sticker">
+                            <li>
+                                <span class="new">new</span>
+                            </li>
+                            <li>
+                                <span class="sale">sale</span>
+                            </li>
+                            <li>
+                                <span class="top">top</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="title-block">
+                        <h3>
+                            Магический талисман
+                        </h3>
+                    </div>
+                    <div class="price-block">
+                        <p>270.00 грн</p>
+                    </div>
+                    <div class="cart-block">
+                        <a href="" class="get-more">Подробнее</a>
+                        <div class="buttons">
+                            <button class="heart">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                            <button class="buy">
+                                <img src="images/icon_cart.png" alt="" class="buy-img">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 product-block">
+                    <div class="image-block">
+                        <img src="images/product_4.png" alt="..." class="image-block-img">
+                        <ul class="product-sticker">
+                            <li>
+                                <span class="new">new</span>
+                            </li>
+                            <li>
+                                <span class="sale">sale</span>
+                            </li>
+                            <li>
+                                <span class="top">top</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="title-block">
+                        <h3>
+                            Алтарная статуэтка "Богиня Викки"
+                        </h3>
+                    </div>
+                    <div class="price-block">
+                        <p>1900.00 грн</p>
+                    </div>
+                    <div class="cart-block">
+                        <a href="" class="get-more">Подробнее</a>
+                        <div class="buttons">
+                            <button class="heart">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                            <button class="buy">
+                                <img src="images/icon_cart.png" alt="" class="buy-img">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 product-block">
+                    <div class="image-block">
+                        <img src="images/product_1.png" alt="..." class="image-block-img">
+                        <ul class="product-sticker">
+                            <li>
+                                <span class="new">new</span>
+                            </li>
+                            <li>
+                                <span class="sale">sale</span>
+                            </li>
+                            <li>
+                                <span class="top">top</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="title-block">
+                        <h3>
+                            Алтарный колокольчик
+                        </h3>
+                    </div>
+                    <div class="price-block">
+                        <p>385.00 грн</p>
+                    </div>
+                    <div class="cart-block">
+                        <a href="" class="get-more">Подробнее</a>
+                        <div class="buttons">
+                            <button class="heart">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                            <button class="buy">
+                                <img src="images/icon_cart.png" alt="" class="buy-img">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 product-block">
+                    <div class="image-block">
+                        <img src="images/product_2.png" alt="..." class="image-block-img">
+                        <ul class="product-sticker">
+                            <li>
+                                <span class="new">new</span>
+                            </li>
+                            <li>
+                                <span class="sale">sale</span>
+                            </li>
+                            <li>
+                                <span class="top">top</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="title-block">
+                        <h3>
+                            Таро 7 Звёзд (Poisoncage Tarot)
+                        </h3>
+                    </div>
+                    <div class="price-block">
+                        <p>385.00 грн <span class="old-price">450.00 грн</span></p>
+                    </div>
+                    <div class="cart-block">
+                        <a href="" class="get-more">Подробнее</a>
+                        <div class="buttons">
+                            <button class="heart">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                            <button class="buy">
+                                <img src="images/icon_cart.png" alt="" class="buy-img">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 product-block">
+                    <div class="image-block">
+                        <img src="images/product_3.png" alt="..." class="image-block-img">
+                        <ul class="product-sticker">
+                            <li>
+                                <span class="new">new</span>
+                            </li>
+                            <li>
+                                <span class="sale">sale</span>
+                            </li>
+                            <li>
+                                <span class="top">top</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="title-block">
+                        <h3>
+                            Магический талисман
+                        </h3>
+                    </div>
+                    <div class="price-block">
+                        <p>270.00 грн</p>
+                    </div>
+                    <div class="cart-block">
+                        <a href="" class="get-more">Подробнее</a>
+                        <div class="buttons">
+                            <button class="heart">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                            <button class="buy">
+                                <img src="images/icon_cart.png" alt="" class="buy-img">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 product-block">
+                    <div class="image-block">
+                        <img src="images/product_4.png" alt="..." class="image-block-img">
+                        <ul class="product-sticker">
+                            <li>
+                                <span class="new">new</span>
+                            </li>
+                            <li>
+                                <span class="sale">sale</span>
+                            </li>
+                            <li>
+                                <span class="top">top</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="title-block">
+                        <h3>
+                            Алтарная статуэтка "Богиня Викки"
+                        </h3>
+                    </div>
+                    <div class="price-block">
+                        <p>1900.00 грн</p>
+                    </div>
+                    <div class="cart-block">
+                        <a href="" class="get-more">Подробнее</a>
+                        <div class="buttons">
+                            <button class="heart">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                            <button class="buy">
+                                <img src="images/icon_cart.png" alt="" class="buy-img">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 title-nav">
+                    <h2>
+                        Наши
+                        <span>Новости</span>
+                    </h2>
+                    <div class="news-slider-nav">
+                        <a href="news.html">Все новости</a>
+                        <div class="news-slider-arrows">
+                            <i class="bi bi-arrow-left news-slider-prev"></i>
+                            <i class="bi bi-arrow-right news-slider-next"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row news-slider">
+                <div class="col-lg-4 col-12 news-block">
+                    <div class="image-block">
+                        <img src="images/blog_1.png" alt="..." class="image-block-img">
+                        <div class="time">
+                            <p>
+                                10/04
+                            </p>
+                        </div>
+                    </div>
+                    <div class="title-block">
+                        <h3>
+                            <a href="" class="title-block-link">Экспресс-расклады на каждый день</a>
+                        </h3>
+                    </div>
+                    <div class="description-block">
+                        <p>
+                            В последнее время наблюдается тенденция к увеличению популярности быстрых гаданий. Экспресс-расклады достаточно точны. Прогноз такого гадания будет на ближайший промежуток времени, он укажет, как Вам сейчас нужно действовать для благоприятного результата, на что обратить внимание
+                        </p>
+                        <a href="" class="description-block-link">Читать дальше</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 news-block">
+                    <div class="image-block">
+                        <img src="images/blog_2.png" alt="..." class="image-block-img">
+                        <div class="time">
+                            <p>
+                                12/04
+                            </p>
+                        </div>
+                    </div>
+                    <div class="title-block">
+                        <h3>
+                            <a href="" class="title-block-link">На карантин с детьми: чем увлечь малышей разных знаков зодиака</a>
+                        </h3>
+                    </div>
+                    <div class="description-block">
+                        <p>
+                            «…Когда люди произносили в загсе клятвы в вечной любви, они не предполагали, что им придется провести вместе две недели»...
+                        </p>
+                        <a href="" class="description-block-link">Читать дальше</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 news-block">
+                    <div class="image-block">
+                        <img src="images/blog_3.png" alt="..." class="image-block-img">
+                        <div class="time">
+                            <p>
+                                14/04
+                            </p>
+                        </div>
+                    </div>
+                    <div class="title-block">
+                        <h3>
+                            <a href="" class="title-block-link">Родовое проклятье по женской линии — расплата за ошибки предков</a>
+                        </h3>
+                    </div>
+                    <div class="description-block">
+                        <p>
+                            Родовое проклятье по женской линии можно сравнить с бомбой замедленного действия, подложенной под всех представительниц женского пола одного семейства. Разрушительная сила проклятья, наложенного преднамеренно или по случайности, распространяется на несколько поколений. 
+                        </p>
+                        <a href="" class="description-block-link">Читать дальше</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 news-block">
+                    <div class="image-block">
+                        <img src="images/blog_4.png" alt="..." class="image-block-img">
+                        <div class="time">
+                            <p>
+                                16/04
+                            </p>
+                        </div>
+                    </div>
+                    <div class="title-block">
+                        <h3>
+                            <a href="" class="title-block-link">Личный гороскоп — его роль в современной жизни</a>
+                        </h3>
+                    </div>
+                    <div class="description-block">
+                        <p>
+                            Личный гороскоп составляется с помощью анализа расположения Солнца и планет. Астрологи могут предугадать изменения в жизни того или иного человека. На сайте имеется гороскоп на сегодня, однако это общий прогноз, вероятность которого недостаточно велика
+                        </p>
+                        <a href="" class="description-block-link">Читать дальше</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 news-block">
+                    <div class="image-block">
+                        <img src="images/blog_4.png" alt="..." class="image-block-img">
+                        <div class="time">
+                            <p>
+                                18/04
+                            </p>
+                        </div>
+                    </div>
+                    <div class="title-block">
+                        <h3>
+                            <a href="" class="title-block-link">Пять мифов о Предсказание судьбы</a>
+                        </h3>
+                    </div>
+                    <div class="description-block">
+                        <p>
+                            Много кого интересует предсказание судьбы, но мало кто прибегает к помощи профессионалов. Это связано с некоторыми мифами, связанными с возможностью заглянуть в будущее.
+                        </p>
+                        <a href="" class="description-block-link">Читать дальше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>
+                        Подписаться <span>Не забудте</span>
+                    </h2>
+                    <p>
+                        Чтобы первыми узнать о новинках и акциях
+                    </p>
+                    <form action="">
+                        <input type="text" name="yourname" id="yourname" placeholder="Ваше имя">
+                        <input type="text" name="yourmail" id="yourmail" placeholder="Ваш email">
+                        <button type="submit">Подписаться</button>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="subscribeChek">
+                            <label class="form-check-label" for="subscribeChek">Я даю согласие на обработку персональных данных</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-12">
+                    <a href="" class="footer-logo">
+                        <img src="images/logo.png" alt="..." class="footer-logo-img">
+                    </a>
+                </div>
+                <div class="col-lg-7">
+                    <ul class="footer-menu-list">
+                        <li><a href="index.html" class="footer-menu-link">Главная</a></li>
+                        <li><a href="about.html" class="footer-menu-link">О нас</a></li>
+                        <li><a href="experts.html" class="footer-menu-link">Эксперты</a></li>
+                        <li><a href="services.html" class="footer-menu-link">Услуги</a></li>
+                        <li><a href="shop.html" class="footer-menu-link">Магазин</a></li>
+                        <li><a href="news.html" class="footer-menu-link">Новости</a></li>
+                        <li><a href="contact.html" class="footer-menu-link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-12">
+                    <a href="account.html" class="user-link">
+                        <img src="images/icon_user.png" alt="" class="user-icon">
+                        Личный кабинет
+                    </a>
+                </div>
+                <div class="col-lg-1 col-12">
+                    <ul class="footer-socials">
+                        <li>
+                            <a href="" class="footer-social-link">
+                                <img src="images/icon_fb.png" alt="" class="footer-social-icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-social-link">
+                                <img src="images/icon_insta.png" alt="" class="footer-social-icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="copyright">
+                        <p>
+                            EZOMIR © Copyright 2020.  Разработано компанией <a href="" class="copyright-link">SFdevelop</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 policy">
+                    <ul class="cards">
+                        <li>
+                            <img src="images/visa.png" alt="..." class="cards-img">
+                        </li>
+                        <li>
+                            <img src="images/master.png" alt="..." class="cards-img">
+                        </li>
+                    </ul>
+                    <a href="" class="policy-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
