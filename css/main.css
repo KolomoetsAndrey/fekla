@@ -466,9 +466,6 @@ button {
   margin: 0 auto;
   padding-top: 25px;
 }
-.experts .expert-block .name-block {
-  background: #FFFFFF;
-}
 .experts .expert-block .name-block h3 {
   font-family: Caviar Dreams;
   font-size: 30px;
@@ -489,7 +486,6 @@ button {
   margin-bottom: 0;
 }
 .experts .expert-block .description-block {
-  background: #FFFFFF;
   padding-bottom: 10px;
 }
 .experts .expert-block .description-block p {
@@ -699,13 +695,13 @@ button {
   background: #FFFFFF;
 }
 .our-experts .expert-slider .expert-block {
-  margin: 1px 15px;
-  padding: 0;
-  margin-bottom: 20px;
+  margin: 1px 15px !important;
+  padding: 0 !important;
+  margin-bottom: 20px !important;
   transition: all 0.3s;
 }
 .our-experts .expert-slider .expert-block .image-block {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 .our-experts .expert-slider .expert-block .name-block h3 {
   color: #0D030E;
@@ -719,9 +715,9 @@ button {
   box-shadow: 0px 0px 0px 1px #8374d5;
 }
 .our-experts .expert-slider .description-block {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  text-align: center;
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+  text-align: center !important;
 }
 .our-experts .expert-slider .description-block .get-more {
   font-family: 'Exo 2', sans-serif;
@@ -756,10 +752,14 @@ button {
 .expert-slider .expert-block .name-block p {
   height: 34px;
   margin-top: 20px;
+  padding-top: 0;
   font-family: 'Exo 2', sans-serif;
   font-size: 16px;
   font-weight: 100;
   text-align: center;
+}
+.expert-slider .expert-block .description-block {
+  padding: 0;
 }
 .expert-slider .expert-block .description-block p {
   margin-top: 40px;
