@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="images/logo.png" alt="..." class="logo-img">
+                    </a>
+                </div>
+                <div class="col-lg-7 menu">
+                    <ul class="menu-list">
+                        <li><a href="index.html" class="menu-link">Главная</a></li>
+                        <li><a href="about.html" class="menu-link">О нас</a></li>
+                        <li><a href="experts.html" class="menu-link">Эксперты</a></li>
+                        <li><a href="services.html" class="menu-link">Услуги</a></li>
+                        <li><a href="shop.html" class="menu-link">Магазин</a></li>
+                        <li><a href="news.html" class="menu-link">Новости</a></li>
+                        <li><a href="contact.html" class="menu-link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 store-nav">
+                    <a href="" class="user-link">
+                        <img src="images/icon_user.png" alt="" class="user-icon">
+                        Личный кабинет
+                    </a>
+                    <a href="" class="cart-link">
+                        <img src="images/icon_cart.png" alt="..." class="cart-icon">
+                        <span class="items">7</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="cart-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>
+                        Корзина<span>товаров</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="index.html" class="breadcrumb-link">Главная</a>
+                        </li>
+                        <li>
+                            <a href="cart.html" class="breadcrumb-link">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row products">
+                <div class="col-12">
+                    <ul>
+                        <li>
+                            <div class="image-block">
+                                <img src="images/product_1.png" alt="..." class="product-img">
+                            </div>
+                            <div class="product-block">
+                                <a href="#" class="product-link">Алтарный колокольчик</a>
+                                <span class="product-price">385.00 грн</span>
+                                <div class="quantity-inner">        
+                                    <button class="btn-minus">-</button>
+                                    <input type="text" class="quantity" value="1" data-max-count="50">
+                                    <button class="btn-plus">+</button>
+                                </div>
+                                <span class="product-total-price">385.00 грн</span>
+                            </div>
+                            <button class="delete"><i class="bi bi-x"></i></button>
+                        </li>
+                        <li>
+                            <div class="image-block">
+                                <img src="images/product_2.png" alt="..." class="product-img">
+                            </div>
+                            <div class="product-block">
+                                <a href="#" class="product-link">Таро 7 Звёзд (Poisoncage Tarot)</a>
+                                <span class="product-price">385.00 грн</span>
+                                <div class="quantity-inner">        
+                                    <button class="btn-minus">-</button>
+                                    <input type="text" class="quantity" value="1" data-max-count="50">
+                                    <button class="btn-plus">+</button>
+                                </div>
+                                <span class="product-total-price">385.00 грн</span>
+                            </div>
+                            <button class="delete"><i class="bi bi-x"></i></button>
+                        </li>
+                        <li>
+                            <div class="image-block">
+                                <img src="images/product_3.png" alt="..." class="product-img">
+                            </div>
+                            <div class="product-block">
+                                <a href="#" class="product-link">Магический талисман</a>
+                                <span class="product-price">385.00 грн</span>
+                                <div class="quantity-inner">        
+                                    <button class="btn-minus">-</button>
+                                    <input type="text" class="quantity" value="1" data-max-count="50">
+                                    <button class="btn-plus">+</button>
+                                </div>
+                                <span class="product-total-price">385.00 грн</span>
+                            </div>
+                            <button class="delete"><i class="bi bi-x"></i></button>
+                        </li>
+                    </ul>
+                    <div class="total-price-block">
+                        <a href="#" class="shopping"><i class="bi bi-arrow-left"></i> Продолжить покупки</a>
+                        <div class="total-price">
+                            Сума заказа <span class="price">3710 грн</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <h4>Данные получателя</h4>
+                    <div class="recipient-block">
+                        <input type="text" name="recipient-name" id="recipient-name" placeholder="Ваше Имя, Фамилия, Отчество *">
+                        <input type="text" name="recipient-phone" id="recipient-phone" placeholder="Ваш телефон *">
+                        <input type="text" name="recipient-email" id="recipient-email" placeholder="Ваш email *">
+                        <span>* Поля обязательные к заполнению</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <h4>Способы оплаты</h4>
+                    <div class="payment-block">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment1" id="payment1" value="option1" checked>
+                            <label class="form-check-label" for="payment1">
+                                Наложенный платеж
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment2" id="payment2" value="option2">
+                            <label class="form-check-label" for="payment2">
+                                Кредитной картой онлайн, Приват 24
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment3" id="payment3" value="option3">
+                            <label class="form-check-label" for="payment3">
+                                Оплатить с личного кабинета
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <h4>Способы доставки</h4>
+                    <div class="delivery-block">
+                        <div class="delivery-types">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="delivery1" id="delivery1" value="option4" checked>
+                                <label class="form-check-label" for="delivery1">
+                                    Новая Почта
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="delivery2" id="delivery2" value="option5">
+                                <label class="form-check-label" for="delivery2">
+                                    Укрпочта
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="delivery3" id="delivery3" value="option6">
+                                <label class="form-check-label" for="delivery3">
+                                    Justin
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="delivery4" id="delivery4" value="option7">
+                                <label class="form-check-label" for="delivery4">
+                                    Другое
+                                </label>
+                            </div>
+                        </div>
+                        <select class="form-select" aria-label=".form-select">
+                            <option selected>Область</option>
+                            <option value="1">Черкасская</option>
+                            <option value="2">Киевская</option>
+                            <option value="3">Днепропетровская</option>
+                        </select>
+                        <select class="form-select" aria-label=".form-select">
+                            <option selected>Населенный пункт</option>
+                            <option value="1">Черкассы</option>
+                            <option value="2">Киев</option>
+                            <option value="3">Днепр</option>
+                        </select>
+                        <select class="form-select" aria-label=".form-select">
+                            <option selected>№ отделения</option>
+                            <option value="1">№1 (ул. Иванова, 1)</option>
+                            <option value="2">№2 (ул. Сидорова, 2)</option>
+                            <option value="3">№3 (ул. Петрова, 3)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h4>Комментарий к заказу</h4>
+                    <textarea name="comment" id="comment" rows="5"></textarea>
+                    <span>* Нажав на кнопку Вы даете согласие на обработку Ваших персональных данных</span>
+                    <button type="submit" class="get-order">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>
+                        Подписаться <span>Не забудте</span>
+                    </h2>
+                    <p>
+                        Чтобы первыми узнать о новинках и акциях
+                    </p>
+                    <form action="">
+                        <input type="text" name="yourname" id="yourname" placeholder="Ваше имя">
+                        <input type="text" name="yourmail" id="yourmail" placeholder="Ваш email">
+                        <button type="submit">Подписаться</button>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="subscribeChek">
+                            <label class="form-check-label" for="subscribeChek">Я даю согласие на обработку персональных данных</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-12">
+                    <a href="" class="footer-logo">
+                        <img src="images/logo.png" alt="..." class="footer-logo-img">
+                    </a>
+                </div>
+                <div class="col-lg-7">
+                    <ul class="footer-menu-list">
+                        <li><a href="" class="footer-menu-link">Главная</a></li>
+                        <li><a href="" class="footer-menu-link">О нас</a></li>
+                        <li><a href="" class="footer-menu-link">Эксперты</a></li>
+                        <li><a href="" class="footer-menu-link">Услуги</a></li>
+                        <li><a href="" class="footer-menu-link">Магазин</a></li>
+                        <li><a href="" class="footer-menu-link">Новости</a></li>
+                        <li><a href="" class="footer-menu-link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-12">
+                    <a href="" class="user-link">
+                        <img src="images/icon_user.png" alt="" class="user-icon">
+                        Личный кабинет
+                    </a>
+                </div>
+                <div class="col-lg-1 col-12">
+                    <ul class="footer-socials">
+                        <li>
+                            <a href="" class="footer-social-link">
+                                <img src="images/icon_fb.png" alt="" class="footer-social-icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer-social-link">
+                                <img src="images/icon_insta.png" alt="" class="footer-social-icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="copyright">
+                        <p>
+                            EZOMIR © Copyright 2020.  Разработано компанией <a href="" class="copyright-link">SFdevelop</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-6 policy">
+                    <ul class="cards">
+                        <li>
+                            <img src="images/visa.png" alt="..." class="cards-img">
+                        </li>
+                        <li>
+                            <img src="images/master.png" alt="..." class="cards-img">
+                        </li>
+                    </ul>
+                    <a href="" class="policy-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

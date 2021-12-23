@@ -1308,6 +1308,274 @@ button {
   padding: 30px;
   background: #FFFFFF;
 }
+.cart-page h1 {
+  width: max-content;
+  font-family: Corinthia;
+  font-size: 92px;
+  color: #FFFFFF;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+.cart-page h1 span {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  font-family: Caviar Dreams;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  color: #944CA2;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+.cart-page h2 {
+  width: 100%;
+  font-family: Caviar Dreams;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  color: #0D030E;
+  position: relative;
+  padding-bottom: 20px;
+  z-index: 0;
+}
+.cart-page p {
+  color: #0D030E;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 18px;
+  position: relative;
+}
+.cart-page p:before {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 1px;
+  width: 65px;
+  background: #944CA2;
+  left: 0;
+  top: -5px;
+}
+.cart-page .products {
+  padding: 30px 30px 60px 30px;
+  background: #FFFFFF;
+}
+.cart-page .products ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #D3CAFF;
+}
+.cart-page .products .image-block {
+  width: 10%;
+}
+.cart-page .products .product-block {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-page .products .product-block .product-link {
+  width: 40%;
+}
+.cart-page .products .product-block .product-price {
+  width: 20%;
+  text-align: center;
+}
+.cart-page .products .product-block .quantity-inner {
+  width: 20%;
+  max-width: 130px;
+  text-align: center;
+}
+.cart-page .products .product-block .quantity-inner .quantity {
+  width: 40px;
+  text-align: center;
+}
+.cart-page .products .product-block .quantity-inner button {
+  color: #944CA2;
+  font-size: 23px;
+  font-weight: bold;
+}
+.cart-page .products .product-block .quantity-inner input {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 18px;
+}
+.cart-page .products .product-block .product-total-price {
+  width: 20%;
+  text-align: center;
+}
+.cart-page .products .product-img {
+  height: 93px;
+  width: auto;
+}
+.cart-page .products .product-link {
+  color: #0D030E;
+  font-size: 23px;
+}
+.cart-page .products .product-price {
+  color: #0D030E;
+  font-size: 18px;
+}
+.cart-page .products .quantity-inner {
+  color: #0D030E;
+  padding: 5px 10px;
+  border: 1px solid #D3CAFF;
+  border-radius: 5px;
+}
+.cart-page .products .product-total-price {
+  color: #0D030E;
+  font-size: 18px;
+  font-weight: bold;
+}
+.cart-page .products .delete {
+  width: 5%;
+  color: #8374D5;
+  font-size: 30px;
+}
+.cart-page .products .total-price-block {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-page .products .total-price-block .shopping {
+  color: #944CA2;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: max-content;
+}
+.cart-page .products .total-price-block .shopping i {
+  font-size: 20px;
+}
+.cart-page .products .total-price-block .total-price {
+  font-size: 20px;
+  color: #232323;
+}
+.cart-page .products .total-price-block .total-price .price {
+  margin-left: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.cart-page .products h4 {
+  color: #232323;
+  font-size: 25px;
+  position: relative;
+  margin-top: 30px;
+}
+.cart-page .products h4:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 300px;
+  background: #8374D5;
+  left: 0;
+  bottom: -10px;
+}
+.cart-page .products .recipient-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.cart-page .products .recipient-block input {
+  margin: 10px 0;
+  padding: 10px 20px;
+  border: 1px solid #944CA2;
+  border-radius: 30px;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+}
+.cart-page .products .recipient-block span {
+  display: block;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  color: #868585;
+}
+.cart-page .products .payment-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.cart-page .products .payment-block .form-check {
+  margin-top: 20px;
+}
+.cart-page .products .payment-block .form-check-input:checked {
+  background-color: #944CA2 !important;
+  border-color: #944CA2 !important;
+}
+.cart-page .products .payment-block label {
+  color: #232323;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+}
+.cart-page .products .delivery-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.cart-page .products .delivery-block .form-check {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.cart-page .products .delivery-block .form-check-input:checked {
+  background-color: #944CA2 !important;
+  border-color: #944CA2 !important;
+}
+.cart-page .products .delivery-block label {
+  color: #232323;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+}
+.cart-page .products .delivery-block select {
+  margin: 10px 0;
+  padding: 10px 20px;
+  border: 1px solid #944CA2;
+  border-radius: 30px;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+}
+.cart-page .products span {
+  display: block;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  color: #868585;
+}
+.cart-page .products .delivery-types {
+  display: flex;
+  margin-bottom: 30px;
+}
+.cart-page .products textarea {
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: 1px solid #944CA2;
+  border-radius: 30px;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+}
+.cart-page .products .get-order {
+  margin-top: 30px;
+  color: #FFFFFF;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-size: 22px;
+  font-family: 'Exo 2', sans-serif;
+  background-size: auto 200%;
+  background-image: linear-gradient(to bottom, #E978FF 0%, #944CA2 50%, #E978FF 100%);
+  transition: all 0.3s;
+}
+.cart-page .products .get-order:hover {
+  background-position: bottom center;
+  box-shadow: 2px 2px 10px #944ca2b0;
+}
 .contact h1 {
   width: max-content;
   font-family: Corinthia;
