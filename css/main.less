@@ -1449,6 +1449,186 @@ input, button {
     }
 }
 
+.shop-page {
+    h1 {
+        width: max-content;
+        font-family: Corinthia;
+        font-size: 92px;
+        color: #FFFFFF;
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+
+        span {
+            position: absolute;
+            top: 30px;
+            left: 100px;
+            font-family: Caviar Dreams;
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+            color: #944CA2;
+            text-decoration: underline;
+            text-transform: capitalize;
+        }
+    }
+
+    h2 {
+        width: 100%;
+        font-family: Caviar Dreams;
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+        color: #0D030E;
+        position: relative;
+        padding-bottom: 20px;
+        z-index: 0;
+    }
+
+    .product-block {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        background: #FFFFFF;
+
+        .image-block {
+            position: relative;
+
+            .image-block-img {
+                height: 280px;
+                width: auto;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .product-sticker {
+                position: absolute;
+                top: 10px;
+                left: 0;
+
+                .new {
+                    display: flex;
+                    font-family: @exofont;
+                    font-size: 25px;
+                    font-weight: 500;
+                    color: #0D030E;
+                    padding: 0 20px;
+                    margin-bottom: 10px;
+                    background: #A9E066;
+                }
+
+                .sale {
+                    display: flex;
+                    font-family: @exofont;
+                    font-size: 25px;
+                    font-weight: 500;
+                    color: #FFFFFF;
+                    padding: 0 20px;
+                    margin-bottom: 10px;
+                    background: #D3608F;
+                }
+
+                .top {
+                    display: flex;
+                    font-family: @exofont;
+                    font-size: 25px;
+                    font-weight: 500;
+                    color: #0D030E;
+                    padding: 0 20px;
+                    margin-bottom: 10px;
+                    background: #FFE531;
+                }
+            }
+        }
+
+        .title-block {
+            padding: 10px 20px;
+
+            h3 {
+                font-family: Caviar Dreams;
+                font-size: 23px;
+                color: #0D030E;
+                text-align: center;
+                height: 60px;
+            }
+        }
+
+        .price-block {
+            padding: 10px 20px;
+
+            p {
+                position: relative;
+                font-family: Caviar Dreams;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                color: #0D030E;
+
+                .old-price {
+                    position: absolute;
+                    top: -20px;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    font-size: 20px;
+                    font-weight: normal;
+                    color: #944CA2;
+                    text-decoration: line-through;
+                }
+            }
+        }
+
+        .cart-block {
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .get-more {
+                font-family: @exofont;
+                font-size: 19px;
+                text-transform: uppercase;
+                color: #944CA2;
+            }
+
+            .buttons {
+                display: flex;
+                align-items: center;
+            }
+
+            .heart {
+                color: #D3CAFF;
+                font-size: 28px;
+                transition: all 0.3s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+
+            .buy {
+                color: #FFFFFF;
+                padding: 11px 10px;
+                margin-left: 5px;
+                border-radius: 100%;
+                background-size: auto 200%;
+                background-image: linear-gradient(to bottom, #E978FF 0%, #944CA2 50%, #E978FF 100%);
+                transition: all 0.3s;
+
+                .buy-img {
+                    width: 30px;
+                    height: auto;
+                }
+        
+                &:hover {
+                    background-position: bottom center;
+                    box-shadow: 2px 2px 10px #944ca2b0;
+                }
+            }
+        }
+    }
+}
+
 .cart-page {
     h1 {
         width: max-content;
