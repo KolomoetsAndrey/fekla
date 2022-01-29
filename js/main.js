@@ -46,21 +46,59 @@ $(document).ready(function() {
     }
 
     //Expert Slider
-    if ($('.expert-slider').length) {
-        $('.expert-slider').slick({
+    // if ($('.expert-slider').length) {
+    //     $('.expert-slider').slick({
+    //         dots: false,
+    //         infinite: false,
+    //         speed: 300,
+    //         slidesToShow: 4,
+    //         slidesToScroll: 1,
+    //         infinite: true,
+    //         prevArrow: $('.expert-slider-prev'),
+    //         nextArrow: $('.expert-slider-next'),
+    //         responsive: [
+    //             {
+    //                 breakpoint: 1024,
+    //                 settings: {
+    //                     slidesToShow: 3,
+    //                     slidesToScroll: 1,
+    //                     infinite: true,
+    //                     dots: true
+    //                 }  
+    //             },
+    //             {
+    //                 breakpoint: 600,
+    //                 settings: {
+    //                     slidesToShow: 2,
+    //                     slidesToScroll: 1
+    //                 }
+    //             },
+    //             {
+    //             breakpoint: 480,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1
+    //                 }
+    //             }
+    //         ]
+    //     });
+    // }
+
+    //Expert Tab Slider
+    if ($('.expert-date-slider').length) {
+        $('.expert-date-slider').slick({
             dots: false,
             infinite: false,
-            speed: 300,
-            slidesToShow: 4,
+            slidesToShow: 7,
             slidesToScroll: 1,
             infinite: true,
-            prevArrow: $('.expert-slider-prev'),
-            nextArrow: $('.expert-slider-next'),
+            prevArrow: $('.expert-date-slider-prev'),
+            nextArrow: $('.expert-date-slider-next'),
             responsive: [
                 {
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 5,
                         slidesToScroll: 1,
                         infinite: true,
                         dots: true
@@ -69,14 +107,14 @@ $(document).ready(function() {
                 {
                     breakpoint: 600,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 4,
                         slidesToScroll: 1
                     }
                 },
                 {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1
                     }
                 }
@@ -233,6 +271,27 @@ $(document).ready(function() {
                     }
                 }
             ]
+        });
+    }
+
+    // Product Thumbnails Slider
+    if ($('.product-slider').length) {
+        $('.product-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+
+        $('.product-thumbnails').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            asNavFor: '.product-slider',
+            dots: false,
+            arrows: false,
+            // centerMode: true,
+            focusOnSelect: true
         });
     }
 

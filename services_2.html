@@ -46,7 +46,7 @@
         </div>
     </header>
 
-    <section class="services">
+    <section class="services-page">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -120,8 +120,8 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="expert-slider">
-                        <div class="col-lg-3 col-12 expert-block">
+                    <div class="nav expert-slider" id="nav-tab" role="tablist">
+                        <div class="nav-link col-lg-3 col-12 expert-block active" id="nav-expert1-tab" data-toggle="tab" data-bs-target="#nav-expert1" type="button" role="tab" aria-controls="nav-expert1" aria-selected="true">
                             <div class="image-block">
                                 <img src="images/ivanova.png" alt="" class="expert-img">
                             </div>
@@ -133,7 +133,7 @@
                                 <a href="expert.html" class="get-more">Узнать больше</a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-12 expert-block">
+                        <div class="nav-link col-lg-3 col-12 expert-block" id="nav-expert2-tab" data-toggle="tab" data-bs-target="#nav-expert2" type="button" role="tab" aria-controls="nav-expert2" aria-selected="false">
                             <div class="image-block">
                                 <img src="images/sidorova.png" alt="" class="expert-img">
                             </div>
@@ -145,7 +145,7 @@
                                 <a href="expert.html" class="get-more">Узнать больше</a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-12 expert-block">
+                        <div class="nav-link col-lg-3 col-12 expert-block" id="nav-expert3-tab" data-toggle="tab" data-bs-target="#nav-expert3" type="button" role="tab" aria-controls="nav-expert3" aria-selected="false">
                             <div class="image-block">
                                 <img src="images/margarita.png" alt="" class="expert-img">
                             </div>
@@ -157,7 +157,7 @@
                                 <a href="expert.html" class="get-more">Узнать больше</a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-12 expert-block">
+                        <div class="nav-link col-lg-3 col-12 expert-block" id="nav-expert4-tab" data-toggle="tab" data-bs-target="#nav-expert4" type="button" role="tab" aria-controls="nav-expert4" aria-selected="false">
                             <div class="image-block">
                                 <img src="images/Albina.png" alt="" class="expert-img">
                             </div>
@@ -169,7 +169,7 @@
                                 <a href="expert.html" class="get-more">Узнать больше</a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-12 expert-block">
+                        <div class="nav-link col-lg-3 col-12 expert-block" id="nav-expert5-tab" data-toggle="tab" data-bs-target="#nav-expert5" type="button" role="tab" aria-controls="nav-expert5" aria-selected="false">
                             <div class="image-block">
                                 <img src="images/ivanova.png" alt="" class="expert-img">
                             </div>
@@ -180,6 +180,223 @@
                             <div class="description-block">
                                 <a href="expert.html" class="get-more">Узнать больше</a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="nav-tabContent">
+                    <div class="fade show active" id="nav-expert1" role="tabpanel" aria-labelledby="nav-expert1-tab">
+                        <div class="title-nav">
+                            <h2>
+                                Выберите
+                                <span>Дату и время</span>
+                            </h2>
+                            <div class="expert-date-slider-nav">
+                                <div class="expert-slider-arrows">
+                                    <i class="bi bi-arrow-left expert-date-slider-prev"></i>
+                                    <i class="bi bi-arrow-right expert-date-slider-next"></i>
+                                </div>
+                            </div>
+                            <p>
+                                Для заказа услуги  выберите одного из экспертов
+                            </p>
+                        </div>
+                        <div class="nav nav-tabs expert-date-slider" id="dateTab" role="tablist">
+                            <div class="nav-item col-lg-2 col-6" role="presentation">
+                                <button class="nav-link date-button active" id="date-1-tab" data-toggle="tab" data-bs-target="#date-1" type="button" role="tab" aria-controls="date-1" aria-selected="true">
+                                    1 мая
+                                    <span>Понедельник</span>
+                                </button>
+                            </div>
+                            <div class="nav-item col-lg-2 col-6" role="presentation">
+                                <button class="nav-link date-button" id="date-2-tab" data-toggle="tab" data-bs-target="#date-2" type="button" role="tab" aria-controls="date-2" aria-selected="false">
+                                    2 мая
+                                    <span>Вторник</span>
+                                </button>
+                            </div>
+                            <div class="nav-item col-lg-2 col-6" role="presentation">
+                                <button class="nav-link date-button" id="date-3-tab" data-toggle="tab" data-bs-target="#date-3" type="button" role="tab" aria-controls="date-3" aria-selected="false">
+                                    3 мая
+                                    <span>Среда</span>
+                                </button>
+                            </div>
+                            <div class="nav-item col-lg-2 col-6" role="presentation">
+                                <button class="nav-link date-button" id="date-4-tab" data-toggle="tab" data-bs-target="#date-4" type="button" role="tab" aria-controls="date-4" aria-selected="false">
+                                    4 мая
+                                    <span>Четверг</span>
+                                </button>
+                            </div>
+                            <div class="nav-item col-lg-2 col-6" role="presentation">
+                                <button class="nav-link date-button" id="date-5-tab" data-toggle="tab" data-bs-target="#date-5" type="button" role="tab" aria-controls="date-5" aria-selected="false">
+                                    5 мая
+                                    <span>Пятница</span>
+                                </button>
+                            </div>
+                            <div class="nav-item col-lg-2 col-6" role="presentation">
+                                <button class="nav-link date-button" id="date-6-tab" data-toggle="tab" data-bs-target="#date-6" type="button" role="tab" aria-controls="date-6" aria-selected="false">
+                                    6 мая
+                                    <span>Суббота</span>
+                                </button>
+                            </div>
+                            <div class="nav-item col-lg-2 col-6" role="presentation">
+                                <button class="nav-link date-button" id="date-7-tab" data-toggle="tab" data-bs-target="#date-7" type="button" role="tab" aria-controls="date-7" aria-selected="false">
+                                    7 мая
+                                    <span>Воскресенье</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tab-content date-time-variants" id="dateTabContent">
+                            <ul class="tab-pane time-variants active" id="date-1" role="tabpanel" aria-labelledby="date-1-tab">
+                                <li>
+                                    <input type="radio" name="time" id="time1_1">
+                                    <label for="time1_1">00:15 01:15</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time2_1">
+                                    <label for="time2_1">01:25 02:25</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time3_1">
+                                    <label for="time3_1">02:35 03:35</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time4_1">
+                                    <label for="time4_1">03:45 04:45</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time5_1">
+                                    <label for="time5_1">04:55 05:55</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time6_1">
+                                    <label for="time6_1">06:05 07:05</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time7_1">
+                                    <label for="time7_1">07:15 08:15</label>
+                                </li>
+                            </ul>
+                            <ul class="tab-pane time-variants" id="date-2" role="tabpanel" aria-labelledby="date-2-tab">
+                                <li>
+                                    <input type="radio" name="time" id="time1_2">
+                                    <label for="time1_2">00:15 01:15</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time2_2">
+                                    <label for="time2_2">01:25 02:25</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time3_2">
+                                    <label for="time3_2">02:35 03:35</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time4_2">
+                                    <label for="time4_2">03:45 04:45</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time5_2">
+                                    <label for="time5_2">04:55 05:55</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time6_2">
+                                    <label for="time6_2">06:05 07:05</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time7_2">
+                                    <label for="time7_2">07:15 08:15</label>
+                                </li>
+                            </ul>
+                            <ul class="tab-pane time-variants" id="date-3" role="tabpanel" aria-labelledby="date-3-tab">
+                                <li>
+                                    <input type="radio" name="time" id="time1_3">
+                                    <label for="time1_3">00:15 01:15</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time2_3">
+                                    <label for="time2_3">01:25 02:25</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time3_3">
+                                    <label for="time3_3">02:35 03:35</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time4_3">
+                                    <label for="time4_3">03:45 04:45</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time5_3">
+                                    <label for="time5_3">04:55 05:55</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time6_3">
+                                    <label for="time6_3">06:05 07:05</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time7_3">
+                                    <label for="time7_3">07:15 08:15</label>
+                                </li>
+                            </ul>
+                            <ul class="tab-pane time-variants" id="date-4" role="tabpanel" aria-labelledby="date-4-tab">
+                                <li>
+                                    <input type="radio" name="time" id="time1_4">
+                                    <label for="time1_4">00:15 01:15</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time2_4">
+                                    <label for="time2_4">01:25 02:25</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time3_4">
+                                    <label for="time3_4">02:35 03:35</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time4_4">
+                                    <label for="time4_4">03:45 04:45</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time5_4">
+                                    <label for="time5_4">04:55 05:55</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time6_4">
+                                    <label for="time6_4">06:05 07:05</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time7_4">
+                                    <label for="time7_4">07:15 08:15</label>
+                                </li>
+                            </ul>
+                            <ul class="tab-pane time-variants" id="date-5" role="tabpanel" aria-labelledby="date-5-tab">
+                                <li>
+                                    <input type="radio" name="time" id="time1_5">
+                                    <label for="time1_5">00:15 01:15</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time2_5">
+                                    <label for="time2_5">01:25 02:25</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time3_5">
+                                    <label for="time3_5">02:35 03:35</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time4_5">
+                                    <label for="time4_5">03:45 04:45</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time5_5">
+                                    <label for="time5_5">04:55 05:55</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time6_5">
+                                    <label for="time6_5">06:05 07:05</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="time" id="time7_5">
+                                    <label for="time7_5">07:15 08:15</label>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
